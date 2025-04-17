@@ -40,6 +40,29 @@ export const LogIn = async (email: string, password: string): Promise<User> => {
     }
 };
 
+export const updateUser = async (updateData: Partial<User>): Promise<User> => {
+    try {
+        if (!updateData._id) {
+            throw new Error('User ID is required to update the user');
+        }
+
+        // Envía los datos directamente en el cuerpo y usa el ID en la URL
+        const response = await axios.put<User>(
+            `http://localhost:9000/api/Users/${updateData._id}`,
+            updateData
+        );
+
+        if (response.status !== 200) {
+            throw new Error('Failed to update user');
+        }
+
+        return response.data; // Devuelve los datos del usuario actualizado
+    } catch (error) {
+        console.error('Error updating user:', error);
+        throw error;
+    }
+};
+
 /* 
 //PODEM FERHO COM UNA PROMESA
 export const addUser = async (newUser: User): Promise<User> => {
