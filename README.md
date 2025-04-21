@@ -1,3 +1,25 @@
+# Seminari React
+
+## Referencias
+
+A continuación se listan las fuentes utilizadas para el desarrollo de este seminario:
+
+### Repositorio
+- [Repositorio original proporcionado por el seminario](https://github.com/FalcoLluc/REACT_Seminari8_Demo.git)
+
+### Videos sobre React  
+Para obtener más información sobre React, se han consultado los siguientes videos:
+- [Introducción a React - Parte 1](https://www.youtube.com/watch?v=lWQ69WX7-hA&t=1s)  
+- [Introducción a React - Parte 2](https://www.youtube.com/watch?v=15VKbky2gB4&t=1s)  
+- [Hooks en React: useState y useEffect](https://www.youtube.com/watch?v=PWF5SgnNdp4)
+
+### Soporte adicional
+- [ChatGPT](https://chat.openai.com/) para la resolución de dudas técnicas y conceptuales.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
